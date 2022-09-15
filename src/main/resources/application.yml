@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: Enclusiv
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: defaultDataSource
+    url: jdbc:mysql://localhost:3306/Enclusiv
+    username: root
+    password: 121522734a
+
+  sql:
+    init:
+      mode: always
+      encoding: utf-8
+      platform: mysql
+
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 437225121@qq.com
+    password: hheyoaubzowxcadg
+
+
+server:
+  port: 8080
+
+  ssl:
+    key-store: classpath:server.keystore
+    key-store-password: 123456
+    key-store-type: JKS
+    key-alias: tomcat
+
+
+#logging:
+#  level:
+#    root: info
+#
+#
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
